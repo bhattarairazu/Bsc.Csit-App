@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    tools:context=".Home.Feedback">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/toolbar_outliner"
+        >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ToolBars">
+    </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <EditText
+        android:id="@+id/editTextemail"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_below="@+id/tolbarsss_feedback"
+        android:background="@drawable/outerline"
+        android:hint="Your Email"
+        android:textAlignment="center"
+
+        />
+    <EditText
+        android:id="@+id/editTextname"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_below="@+id/editTextemail"
+        android:background="@drawable/outerline"
+        android:hint="Your Name"
+        android:textAlignment="center"
+
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:ems="10"
+        android:layout_below="@+id/editTextname"
+        android:background="@drawable/outerline"
+        android:hint="Give Your Feed Back"
+        android:textAlignment="center"
+
+        />
+    <LinearLayout
+        android:id="@+id/linaers"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/editText"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="397dp">
+
+        <Button
+            android:id="@+id/btn_adds"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:background="@drawable/outerline"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/cancel_btns"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+
+            android:layout_margin="5dp"
+            android:background="@drawable/outerline"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:textColor="@color/textcolor"
+            />
+    </LinearLayout>
+</LinearLayout>

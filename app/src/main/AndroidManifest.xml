@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.razu.newcsitproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Home.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_Signup" />
+        <activity android:name=".Home.Dashboard" />
+        <activity android:name=".Home.Profile" />
+        <activity android:name=".Home.Semester" />
+        <activity android:name=".Home.Notice" />
+        <activity android:name=".Home.Elibraray" />
+        <activity android:name=".Home.Itnews" />
+        <activity android:name=".Home.Csitforums" />
+        <activity android:name=".Home.Settings" />
+        <activity android:name=".Home.Feedback" />
+        <activity android:name=".Home.Csit_colleges" />
+        <activity android:name=".Home.Faq" />
+        <activity android:name=".Home.Eventadds" />
+        <activity android:name=".Semester.Firstsem" />
+        <activity android:name=".Home.Detailsnewssoource" />
+        <activity android:name=".Home.Webviews" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".Home.Jobs" />
+        <activity android:name=".Home.Add_forums" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Home.Detailsnoticereads" />
+        <activity android:name=".Home.Comment_detials"></activity>
+    </application>
+
+</manifest>

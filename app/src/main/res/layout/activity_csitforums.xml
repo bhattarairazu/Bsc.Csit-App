@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.Csitforums">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/appbars"
+        android:background="@drawable/toolbar_outliner"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/GalaxyZooThemeToolbarDarkOverflow"
+            app:popupTheme="@style/Theme.AppCompat.NoActionBar"
+            android:id="@+id/ToolBars">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/swipe_forusm"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/appbars"
+
+        >
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerview_forums"
+
+            >
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:id="@+id/errorMessageforum"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:padding="16dp"
+            android:src="@drawable/no_connection" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Internet Conncetion" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap to retry."
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/progressbarsforum"
+        android:theme="@style/GalaxyZooThemeToolbarDarkOverflow"
+        android:layout_centerInParent="true"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/floatingbtn"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_circl"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

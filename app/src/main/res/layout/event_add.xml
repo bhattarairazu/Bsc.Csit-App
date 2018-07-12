@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.Eventadds"
+    >
+    <include layout="@layout/toolbar"
+        android:id="@+id/tolbars_notice"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/linear_layout1"
+    android:layout_margin="10dp"
+    android:background="@drawable/roundwhite"
+    android:layout_below="@+id/tolbars_notice"
+    >
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="56dp"
+        tools:ignore="MissingConstraints"
+        />
+
+    <EditText
+        android:id="@+id/eventdescritpion"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:hint="Describe about your event"
+        android:inputType="textMultiLine"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <EditText
+        android:id="@+id/locations"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:hint="Add Location"
+        tools:ignore="MissingConstraints"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="337dp" />
+
+    <EditText
+        android:id="@+id/times"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Time"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="291dp" />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/linaers"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/linear_layout1"
+        android:orientation="horizontal"
+        android:weightSum="100"
+
+      >
+
+        <Button
+            android:id="@+id/btn_adds"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+            android:background="@drawable/outerline"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/cancel_btns"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:background="@drawable/outerline"
+            android:text="Cancel"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/textcolor"
+            />
+    </LinearLayout>
+</RelativeLayout>

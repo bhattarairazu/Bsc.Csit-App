@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/outerline"
+    android:layout_margin="10dp"
+    tools:context="com.example.razu.newcsitproject.Home.Comment_detials">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lheading"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/bg"
+                app:civ_border_width="2dp"
+                android:layout_marginLeft="15dp"
+                app:civ_border_color="#FF000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_profilename"
+                android:text="Raju Bhattara"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear2"
+            android:orientation="vertical"
+            android:layout_below="@+id/lheading"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:inputType="textMultiLine"
+                android:textStyle="italic"
+                android:text="here goes your post description"
+                android:textSize="15dp"
+                android:id="@+id/postdescription"
+
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/commentswipe"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative1"
+        android:layout_above="@+id/l1"
+        >
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:id="@+id/recyclerview_commentdetails"
+
+            >
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l1"
+        android:layout_margin="10dp"
+        android:weightSum="100"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:hint="Your comment here"
+            android:id="@+id/text_comment"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:inputType="textMultiLine"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="italic"
+   android:layout_weight="80"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonsubmit"
+            android:text="Post"
+            android:layout_margin="1dp"
+            android:textColor="@color/textcolor"
+            android:background="@drawable/outerline"
+            android:paddingRight="10dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

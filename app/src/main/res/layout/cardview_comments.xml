@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:elevation="50dp"
+    app:cardCornerRadius="5dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/l2"
+    android:orientation="horizontal"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/bg"
+        app:civ_border_width="2dp"
+        android:layout_marginLeft="15dp"
+        app:civ_border_color="#FF000000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l3"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Textview_name"
+            android:text="Razu Bhattarai"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/commets"
+            android:inputType="textMultiLine"
+            android:text="yourcomment here"
+            android:textColor="@color/cardview_dark_background"
+            android:textStyle="italic"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home.Add_forums">
+    <include layout="@layout/new_tolbar"
+        android:id="@+id/is"
+        />
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:id="@+id/imageButton"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/is"
+        android:src="@drawable/add_btn"
+        android:background="@drawable/outerline"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/editText_addpost"
+        android:background="@drawable/outerline"
+        android:layout_below="@+id/imageButton"
+        android:textAlignment="center"
+        android:paddingBottom="10dp"
+        android:layout_margin="10dp"
+        android:paddingRight="10dp"
+        android:hint="Post Description"
+        android:paddingTop="10dp"
+        />
+    <LinearLayout
+        android:id="@+id/linaers"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/editText_addpost"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="397dp">
+
+        <Button
+            android:id="@+id/btn_adds"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+            android:background="@drawable/outerline"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/cancel_btns"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/outerline"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:textColor="@color/textcolor"
+            />
+    </LinearLayout>
+
+</LinearLayout>

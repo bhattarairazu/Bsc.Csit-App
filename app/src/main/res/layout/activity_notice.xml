@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.Notice">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/appbars"
+        android:background="@drawable/toolbar_outliner"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/GalaxyZooThemeToolbarDarkOverflow"
+            app:popupTheme="@style/Theme.AppCompat.NoActionBar"
+            android:id="@+id/ToolBars">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbars"
+        android:text="All Notices"
+        android:layout_margin="3dp"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:id="@+id/semester_texviews"
+        android:background="@drawable/outerline"
+
+        />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/swipe_notices"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/semester_texviews"
+
+        >
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview_notices"
+
+        >
+
+    </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/errorMessageNews"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:padding="16dp"
+            android:src="@drawable/no_connection" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="No Internet Conncetion"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Tap to retry."
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbarnotice"
+        android:theme="@style/GalaxyZooThemeToolbarDarkOverflow"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

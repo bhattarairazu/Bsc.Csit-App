@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="4dp"
+    app:cardElevation="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardview_bg"
+            android:id="@+id/linear1"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="79dp"
+                android:layout_weight="20"
+                android:id="@+id/news_image"
+                android:src="@drawable/circular_shape"
+
+                />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardview_bg"
+            android:id="@+id/linear2"
+            android:layout_weight="80"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="News source"
+                android:id="@+id/news_textview"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold"
+
+                android:textSize="20dp"
+                android:layout_weight="80"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="News source"
+                android:id="@+id/news_description"
+                android:textColor="@color/colorGray"
+                android:textStyle="italic"
+               android:lines="2"
+
+                android:textSize="10dp"
+                android:layout_weight="80"
+                />
+
+        </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/popupimage"
+                android:src="@drawable/ic_popupmenu"
+                />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+

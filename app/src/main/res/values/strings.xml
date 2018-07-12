@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Bsc.Csit</string>
+    <string name="drawer_dashboaard">Dashboard</string>
+    <string name="drawer_profile">Profile</string>
+    <string name="drawer_semester">Semester</string>
+    <string name="drawer_csitcolleges">Projects</string>
+    <string name="drawer_notice">Notice</string>
+    <string name="drawer_elibrary">e-Libraray</string>
+    <string name="drawer_itnes">IT News</string>
+    <string name="drawer_csitforums">CSIT Forums</string>
+    <string name="drawer_setting">Setting</string>
+    <string name="drawer_feedback">Feedback</string>
+    <string name="drawer_faq">FAQs</string>
+    <string name="drawer_logout">Logout</string>
+    <string name="drawer_jobs">Recent IT Jobs</string>
+    <string name="drawer_routine">Routine</string>
+    <string name="facebook_app_id">1857302181249915</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
